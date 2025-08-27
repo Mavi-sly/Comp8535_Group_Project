@@ -1,14 +1,14 @@
-# Comp8535_Group_Project
+# MBTI Personality Prediction: A Data-Centric Analysis
 
-This is the repository for ANU course Comp8535 Engineering Data Analytics Group Assignment.
+This project presents a comprehensive data analysis and modeling pipeline for predicting Myers-Briggs (MBTI) personality types from text. Moving beyond a simple model application, it focuses on **feature engineering** and **robust evaluation** to derive insights from a noisy, real-world dataset.
 
-Literature review draft in [here](https://anu365-my.sharepoint.com/:x:/r/personal/u7616055_anu_edu_au/Documents/COMP8353/Papers.xlsx?d=wc23bb1f24d5543a1a7e7cf93cbd07438&csf=1&web=1&e=EDb2iA)
+## Key Highlights
 
-## schedule
-| Description      | Date |
-| ----------- | ----------- |
-| Literature review & 2nd Meeting | 30 Mar       |
-| Report Final Deadline   | 16 May        |
-| Regular Meeting   | Every Wed 17:00       |
+*   **Data Preprocessing & Cleaning:** Implemented a full text cleaning pipeline including lowercasing, stopword removal, and lemmatization to prepare user-generated forum posts for analysis.
+*   **Advanced Feature Engineering:** Engineered two novel feature sets:
+    *   **Trait Vectors:** A graph-based feature constructed using PageRank propagation over trait co-occurrence graphs to model psychological associations.
+    *   **Stylometric Features:** Quantified writing style through metrics like sentence length, punctuation usage, and lexical diversity.
+*   **Comparative Model Analysis:** Systematically evaluated the performance of **seven machine learning models** (including Logistic Regression, Random Forest, XGBoost, LightGBM) across 98 configurations to understand which approaches work best for different data representations.
+*   **Handling Data Imbalance:** Addressed significant class imbalance in the dataset using SMOTE, providing a clear comparison of its effects on each model and feature set.
 
-
+This work demonstrates a full-cycle data analysis project, from data cleaning and exploratory analysis to feature creation, model testing, and result interpretation.
